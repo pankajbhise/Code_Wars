@@ -7,6 +7,6 @@ print("The sum of elements in the array is:", sum)
 
 
 # Example 2:
-# arr1 =[1,3,3]
-# sum1= sum(arr1)
-# print("The sum of the array is:", sum1)
+arr1 =[1,3,3]
+sum1= sum(arr1)
+print("The sum of the array is:", sum1)
