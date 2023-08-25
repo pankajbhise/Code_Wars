@@ -1,1 +1,28 @@
+# Question 1).
+# Armstrong number
 
+# Ex: 1
+import math
+num=153
+value = [int(d) for d in str(num)]
+result = 0
+for i in range(0, len(value)):
+ result = result + math.pow(value[i], len(value))
+if result==num:
+ print("Yes, Armstrong number")
+else:
+ print("No, Not an armstrong number")
+
+
+
+#  Ex:2
+import math
+num=370
+value = [int(d) for d in str(num)]
+result = 0
+for i in range(0, len(value)):
+ result = result + math.pow(value[i], len(value))
+if result==num:
+ print("Yes, Armstrong number")
+else:
+ print("No, Not an armstrong number")
