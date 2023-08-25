@@ -26,3 +26,82 @@ if result==num:
  print("Yes, Armstrong number")
 else:
  print("No, Not an armstrong number")
+
+
+
+
+
+# Question2).
+N = 5
+arr = [2,3,1,2,3]
+arr_size = len(arr)
+for i in range(arr_size):
+  
+    x = arr[i] % arr_size
+    arr[x] = arr[x] + arr_size
+  
+print("The repeating elements are : ")
+for i in range(arr_size):
+    if (arr[i] >= arr_size*2):
+        print(i, " ")
+
+
+
+
+
+#Question 3).
+class Node:
+ 
+    def __init__(self, data):
+        self.data = data
+        self.next = None
+ 
+ 
+class LinkedList:
+ 
+    def __init__(self):
+        self.head = None
+ 
+    def reverse(self):
+        prev = None
+        current = self.head
+        while(current is not None):
+            next = current.next
+            current.next = prev
+            prev = current
+            current = next
+        self.head = prev
+ 
+    def push(self, new_data):
+        new_node = Node(new_data)
+        new_node.next = self.head
+        self.head = new_node
+ 
+    def printList(self):
+        temp = self.head
+        while(temp):
+            print(temp.data, end=" ")
+            temp = temp.next
+ 
+
+list = LinkedList()
+list.push(6)
+list.push(5)
+list.push(4)
+list.push(3)
+list.push(2)
+list.push(1)
+ 
+print ("Given linked list")
+list.printList()
+list.reverse()
+print ("\nReversed linked list")
+list.printList()
+
+n = int(input("Enter no of elements in array:"))
+arr = []
+print("Enter elements in the array:")
+for i in range(0,n):
+    temp = int(input())
+    arr.append(temp)
+
